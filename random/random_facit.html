@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="demo"></h3>
+    <script>
+        // Get a random integer from 1 to 10 inclusive
+        const num = Math.ceil(Math.random() * 10);
+       
+        const gnum = prompt('Guess the number between 1 and 10');
+
+        if (gnum == num)
+
+            document.getElementById("demo").innerHTML = "Matched"
+        else {
+        
+            document.getElementById("demo").innerHTML= 'Not matched, the number was '+num
+        }
+    </script>
+</body>
+</html>
